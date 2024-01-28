@@ -1,4 +1,3 @@
-import * as React from "react"
 
 const Arrow = (props) => (
   <svg
