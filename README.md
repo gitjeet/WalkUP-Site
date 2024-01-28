@@ -1,9 +1,33 @@
-# Landing Page The-Weirdos-NFT-Website
-Build a cool NFT Collection website landing page with React JS . This website is created using Gsap for cool scrolling and animation.
+# How to Create NFT Collection Landing Page in React JS
 
-#
-# Images of The NFT Collection Website:
-![Home - Desktop](https://github.com/carlosAndress101/The-Weirdos-NFT-Website/assets/63275338/963f86b6-10f1-4b25-bb25-557f52ce7cf3)
-![nuevaHome](https://github.com/carlosAndress101/The-Weirdos-NFT-Website/assets/63275338/420ba45a-4cee-4d5f-8275-3422463841aa)
-![Home-1 - Mobile](https://github.com/carlosAndress101/The-Weirdos-NFT-Website/assets/63275338/483caece-87d5-4ade-b9d5-242fe05dd45e)
-![Home-2- Mobile](https://github.com/carlosAndress101/The-Weirdos-NFT-Website/assets/63275338/2aa56e86-b2fb-4dca-8977-eefcf25be9b3)
+This repository contains starter code for NFT Collection Website in ReactJS. <br />
+
+View Demo👇: <br />
+https://the-weirdos.netlify.app/ <br />
+
+If you want to learn how to create it please follow below tutorial👇: <br />
+
+https://youtu.be/edr2o59Twrs <br />
+
+### Images of The NFT Collection Website:
+![HOME](https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code/blob/main/Home%20-%20Desktop.png)
+![ABOUT](https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code/blob/main/Home-2%20-%20Desktop.png)
+
+<p align="center">
+  <img src="https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code/blob/main/Home-1%20-%20Mobile.png" alt="HOME" />
+  <img src="https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code/blob/main/Home-2-%20Mobile.png" alt="MENU" />
+</p>
+
+### Resources Used in This Project
+
+Character Figures: https://bigheads.io/ <br />
+Fonts: https://fontsource.org/ <br />
+Svg Icons From: https://icons8.com & https://freesvg.org/   <br />
+
+### External Libraries used in this project: 
+
+[styled-components](https://styled-components.com/docs/advanced) <br />
+[GSAP](https://greensock.com/gsap/) <br />
+[type-writer effect](https://www.npmjs.com/package/typewriter-effect) <br />
+[react-confetti](https://www.npmjs.com/package/react-confetti) <br />
+[react-use](https://www.npmjs.com/package/react-use) <br />
