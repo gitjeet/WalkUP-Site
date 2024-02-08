@@ -2,12 +2,12 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import styled from "styled-components";
 import Button from "./Button";
-
+import { style } from "../styles/styles";
 const Title = styled.h2`
   font-size: ${(props) => props.theme.fontxxl};
   text-transformation: capitalize;
   width: 80%;
-  color: ${(props) => props.theme.text};
+  color: ${style.primaryText};
   align-self: flex-start;
 
   span {
@@ -43,10 +43,10 @@ const Title = styled.h2`
 `;
 
 const SubTitle = styled.h3`
-  font-size: ${(props) => props.theme.fontlg};
+  font-size: ${style.fontmd};
   text-transform: capitalize;
-  color: ${(props) => `rgba(${props.theme.textRgba}, 0.6)`};
-  font-weight: 600;
+  color: ${style.primaryText};
+  font-weight: 400;
   margin-bottom: 1rem;
   width: 80%;
   align-self: flex-start;

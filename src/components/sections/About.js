@@ -4,6 +4,7 @@ import Carousel from "../Carousel";
 import Button from "../Button";
 import { ThemeProvider } from "styled-components";
 import { dark } from "../../styles/Themes";
+import { linear_gradient2 } from "../../styles/styles";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -142,7 +143,7 @@ const ButtonContainer = styled.div`
 
 const About = () => {
   return (
-    <Section id="about">
+    <Section id="about" style={linear_gradient2}>
       <Container>
         <Box>
           <Carousel />
