@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import "@fontsource/akaya-telivigala";
 import "@fontsource/sora";
-
+import { linear_gradient } from "./styles";
 const GlobalStyles = createGlobalStyle`
  
  *,*::before,*::after {
@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
  body {
   font-family: 'Sora', sans-serif;
   overflow-x: hidden;
+  background: ${linear_gradient.background};
  }
 
  h1, h2, h3, h4, h5, h6 {

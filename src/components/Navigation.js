@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import Logo from "./Logo";
-
+import { style }  from "../styles/styles";
 const Section = styled.section`
   width: 100vw;
-  background-color: ${(props) => props.theme.body};
+  
 `;
 
 const NavBar = styled.nav`
@@ -63,7 +63,7 @@ const Menu = styled.ul`
 
 const MenuItem = styled.li`
   margin: 0 1rem;
-  color: ${(props) => props.theme.text};
+  color ${style.primaryText};
   cursor: pointer;
 
   &::after {
@@ -153,7 +153,7 @@ const Navigation = () => {
   return (
     <Section id="navigation">
       <NavBar>
-        <Logo />
+        <Logo  />
         <HamburguerMenu click={click} onClick={() => setClick(!click)}>
           &nbsp;
         </HamburguerMenu>

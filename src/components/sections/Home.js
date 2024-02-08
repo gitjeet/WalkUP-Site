@@ -4,12 +4,13 @@ import { keyframes } from "styled-components";
 import CoverVideo from "../CoverVideo";
 import TypeWriterText from "../TypeWriterText";
 import RoundTextBlack from "../../assets/Rounded-Text-Black.png";
-
+import { style } from "../../styles/styles";
+import { linear_gradient } from "../../styles/styles";
 const Section = styled.section`
   min-height: ${(props) => `calc(100vh - ${props.theme.navHeight})`};
   width: 100vw;
   position: relative;
-  background-color: ${(props) => props.theme.body};
+
 `;
 
 const Container = styled.div`
@@ -101,10 +102,10 @@ const Circle = styled.span`
     font-size: ${(props) => props.theme.fontlg};
   }
 `;
-
+{/* <div style={{ backgroundColor: style.linear_gradient.background }}></div> */}
 const Home = () => {
   return (
-    <Section id="home">
+    <Section id="home" style={linear_gradient}>
       <Container>
         <Box>
           <TypeWriterText />
