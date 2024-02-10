@@ -102,7 +102,9 @@ const TypeWriterText = () => {
       </Title>
       <SubTitle>Bored Of Apes? Try Something New.</SubTitle>
       <ButtonContainer>
-        <Button text="Explore" link="#about" />
+        <a href="https://drive.google.com/file/d/1HpqppcYhUHS2m4eUl2Xfazk0Qgei3NNQ/view" target="_blank" rel="noopener noreferrer">
+          <Button text="Download" />
+        </a>
       </ButtonContainer>
     </>
   );
