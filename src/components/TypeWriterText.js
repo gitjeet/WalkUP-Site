@@ -16,15 +16,15 @@ const Title = styled.h2`
   }
 
   .text-1 {
-    color: blue;
+    color: #92C7CF;
   }
 
   .text-2 {
-    color: orange;
+    color: #AAD7D9;
   }
 
   .text-3 {
-    color: red;
+    color:#40A2E3;
   }
 
   @media (max-width: 70em) {
@@ -79,7 +79,7 @@ const TypeWriterText = () => {
   return (
     <>
       <Title>
-        Discover a new era of cool
+        Step Into NFT Adventure
         <Typewriter
           options={{
             autoStart: true,
@@ -87,20 +87,20 @@ const TypeWriterText = () => {
           }}
           onInit={(typewriter) => {
             typewriter
-              .typeString("<span class='text-1'>NFTs.</span>")
+              .typeString("<span class='text-1'>Explore</span>")
               .pauseFor(2000)
               .deleteAll()
-              .typeString("<span class='text-2'>Collectible Items.</span>")
+              .typeString("<span class='text-2'>Earn</span>")
               .pauseFor(2000)
               .deleteAll()
-              .typeString("<span class='text-3'>Ape Killers!</span>")
+              .typeString("<span class='text-3'>Boost Local Business!</span>")
               .pauseFor(2000)
               .deleteAll()
               .start();
           }}
         />
       </Title>
-      <SubTitle>Bored Of Apes? Try Something New.</SubTitle>
+      <SubTitle>Bored Of NFTs? Get Creative with 3D and Geo NFTs</SubTitle>
       <ButtonContainer>
         <Button text="Explore" link="#about" />
       </ButtonContainer>

@@ -3,18 +3,19 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useLayoutEffect, useRef } from "react";
 import styled from "styled-components";
 import DrawSvg from "../DrawSvg";
-
+import { roadmap_style } from "../../styles/styles"
+import { style } from "../../styles/styles";
 const Section = styled.section`
   min-height: 100vh;
   width: 100vw;
-  background-color: ${(props) => props.theme.body};
+  background-color: ${(props) => 'props.theme.body'};
   position: relative;
 `;
 
 const Title = styled.h1`
   font-size: ${(props) => props.theme.fontxxl};
   text-transformation: capitalize;
-  color: ${(props) => props.theme.text};
+  color: ${style.primaryText};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,6 +50,7 @@ const SvgContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  
 `;
 
 const Items = styled.ul`
@@ -56,10 +58,11 @@ const Items = styled.ul`
   width: 100%;
   height: 100%;
   display: flex;
+  
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  color:white !important;
   @media (max-width: 48em) {
     width: 90%;
   }
@@ -96,6 +99,7 @@ const Items = styled.ul`
     div {
       border-radius: 0 50px 0 50px;
       text-align: left;
+      
     }
     p {
       border-radius: 0 40px 0 40px;
@@ -128,6 +132,7 @@ const Box = styled.p`
   background-color: ${(props) => props.theme.carouselColor};
   color: ${(props) => props.theme.text};
   padding: 1rem;
+  
   position: relative;
   border: 1px solid ${(props) => props.theme.text};
 `;
@@ -209,9 +214,10 @@ const Roadmap = () => {
   }, []);
 
   return (
-    <Section id="roadmap">
-      <Title>Roadmap</Title>
-      <Container>
+ 
+    <Section id="roadmap" style={roadmap_style } >
+      <Title style={{color:"white !important"}}>Roadmap</Title>
+      <Container style={roadmap_style}>
         <SvgContainer>
           <DrawSvg />
         </SvgContainer>
@@ -245,6 +251,7 @@ const Roadmap = () => {
         </Items>
       </Container>
     </Section>
+
   );
 };
 

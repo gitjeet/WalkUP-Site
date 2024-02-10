@@ -7,7 +7,7 @@ import Facebook from "../Icons/Facebook";
 import Instagram from "../Icons/Instagram";
 import Twitter from "../Icons/Twitter";
 import LinkedIn from "../Icons/LinkedIn";
-
+import { footer_gradient } from "../styles/styles";
 const Section = styled.section`
   min-height: 100vh;
   width: 100vw;
@@ -127,7 +127,7 @@ const Footer = () => {
   };
 
   return (
-    <Section>
+    <Section style={footer_gradient}>
       <Banner />
       <Container>
         <Left>
@@ -163,7 +163,7 @@ const Footer = () => {
             </a>
           </IconList>
         </Left>
-        <MenuItems>
+        <MenuItems >
           <Item onClick={() => scrollTo("home")}>Home</Item>
           <Item onClick={() => scrollTo("about")}>About</Item>
           <Item onClick={() => scrollTo("roadmap")}>Roadmap</Item>
@@ -174,17 +174,13 @@ const Footer = () => {
       </Container>
       <Bottom>
         <span>
-          &copy; {new Date().getFullYear()} Weirdos Club. All rights reserved.
+          &copy; {new Date().getFullYear()} WalkUP Labs. All rights reserved.
         </span>
         <span>
           Made with &#10084; by
-          <a
-            href="https://youtube.com/codebucks"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            CodeBucks
-          </a>
+          
+            WalkUP Labs
+
         </span>
       </Bottom>
     </Section>

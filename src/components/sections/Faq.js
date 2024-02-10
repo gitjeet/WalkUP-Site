@@ -3,7 +3,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useLayoutEffect, useRef } from "react";
 import styled from "styled-components";
 import Accordion from "../Accordion";
-
+import {linear_gradient3} from "../../styles/styles";
 const Section = styled.section`
   min-height: 100vh;
   height: auto;
@@ -11,7 +11,7 @@ const Section = styled.section`
   background-color: ${(props) => props.theme.text};
   position: relative;
   color: ${(props) => props.theme.body};
-
+  margin-top: -35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +87,7 @@ const Faq = () => {
   }, []);
 
   return (
-    <Section ref={ref} id="faq">
+    <Section ref={ref} id="faq" style={linear_gradient3}>
       <Title>FAQ</Title>
       <Container>
         <Box>

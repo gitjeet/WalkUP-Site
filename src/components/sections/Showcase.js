@@ -13,7 +13,7 @@ import img8 from "../../assets/Nfts/bighead-7.svg";
 import img9 from "../../assets/Nfts/bighead-8.svg";
 import img10 from "../../assets/Nfts/bighead-9.svg";
 import ETH from "../../assets/icons8-ethereum-48.png";
-
+import {linear_gradient3} from "../../styles/styles"
 const Section = styled.section`
   min-height: 100vh;
   width: 100vw;
@@ -150,7 +150,7 @@ const Showcase = () => {
   const Row2Ref = useRef(null);
 
   return (
-    <Section id="showcase">
+    <Section id="showcase" style={linear_gradient3}>
       <Row direction="none" ref={Row1Ref}>
         <NftItem img={img1} number={852} price={1.0} passRef={Row1Ref} />
         <NftItem img={img2} number={123} price={1.2} passRef={Row1Ref} />

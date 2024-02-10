@@ -4,7 +4,7 @@ import Carousel from "../Carousel";
 import Button from "../Button";
 import { ThemeProvider } from "styled-components";
 import { dark } from "../../styles/Themes";
-import { linear_gradient2 } from "../../styles/styles";
+import { linear_gradient3 } from "../../styles/styles";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -143,17 +143,17 @@ const ButtonContainer = styled.div`
 
 const About = () => {
   return (
-    <Section id="about" style={linear_gradient2}>
+    <Section id="about" style={linear_gradient3}>
       <Container>
         <Box>
           <Carousel />
         </Box>
         <Box>
           <Title>
-            Welcome To The <br /> Weirdos Club.
+            Welcome To The <br /> WalkUp Club.
           </Title>
           <SubText>
-            The WEIRDOS CLUB is a private collection of NFTs—unique digital
+            The WalkUp Club is a private collection of NFTs—unique digital
             collectibles. The Weirdos are stored as ERC-721 tokens on the
             Ethereum blockchain and hosted on IPFS.
           </SubText>

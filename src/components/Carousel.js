@@ -20,13 +20,15 @@ import img7 from "../assets/Nfts/bighead-6.svg";
 import img8 from "../assets/Nfts/bighead-7.svg";
 import img9 from "../assets/Nfts/bighead-8.svg";
 import img10 from "../assets/Nfts/bighead-9.svg";
-
+import {style} from "../styles/styles"
 import Arrow from "../assets/Arrow.svg";
-
 const Container = styled.div`
   width: 25vw;
   height: 70vh;
+  background-color: rgba(17, 45, 78, 0.5); /* Background color with alpha channel */
+  backdrop-filter: blur(100px); /* Glass morphism effect */
 
+  /* Media queries for responsiveness */
   @media (max-width: 70em) {
     height: 60vh;
   }
@@ -46,15 +48,15 @@ const Container = styled.div`
     width: 60vw;
   }
 
+  /* Styles for Swiper */
   .swiper {
     width: 100%;
     height: 100%;
   }
 
   .swiper-slide {
-    background-color: ${(props) => props.theme.carouselColor};
+    background-color: ${style.primaryText};
     border-radius: 20px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,39 +69,15 @@ const Container = styled.div`
     }
   }
 
-  .swiper-button-next {
-    color: ${(props) => props.theme.text};
-    right: 0;
-    width: 4rem;
-    top: 60%;
-
-    background-image: url(${Arrow});
-    background-position: center;
-    background-size: cover;
-
-    &:after {
-      display: none;
-    }
-
-    @media (max-width: 64em) {
-      width: 3rem;
-    }
-
-    @media (max-width: 30em) {
-      width: 2rem;
-    }
-  }
-
+  /* Styles for Swiper buttons */
+  .swiper-button-next,
   .swiper-button-prev {
     color: ${(props) => props.theme.text};
     width: 4rem;
-    left: 0;
     top: 60%;
-    transform: rotate(180deg);
     background-image: url(${Arrow});
     background-position: center;
     background-size: cover;
-
     &:after {
       display: none;
     }
@@ -112,7 +90,17 @@ const Container = styled.div`
       width: 2rem;
     }
   }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+    transform: rotate(180deg);
+  }
 `;
+
 
 const Carousel = () => {
   return (

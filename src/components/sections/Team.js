@@ -11,18 +11,19 @@ import img7 from "../../assets/Nfts/bighead-6.svg";
 import img8 from "../../assets/Nfts/bighead-7.svg";
 import img9 from "../../assets/Nfts/bighead-8.svg";
 import ConfettiComponent from "../Confetti";
-
+import {roadmap_style} from "../../styles/styles"
 const Section = styled.section`
   min-height: 100vh;
   width: 100vw;
   background-color: ${(props) => props.theme.body};
   position: relative;
+  margin-top:-15px;
 `;
 
 const Title = styled.h1`
   font-size: ${(props) => props.theme.fontxxl};
   text-transformation: capitalize;
-  color: ${(props) => props.theme.text};
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,14 +57,14 @@ const Container = styled.div`
 const Item = styled.div`
   width: calc(20rem - 4vw);
   padding: 1rem 0;
-  color: ${(props) => props.theme.body};
+  color: white;
   margin: 2rem 1rem;
   position: relative;
   z-index: 5;
 
   backdrop-filter: blur(4px);
 
-  border: 2px solid ${(props) => props.theme.text};
+  border: 2px solid white;
   border-radius: 20px;
 
   &:hover {
@@ -82,8 +83,9 @@ const ImageContainer = styled.div`
   margin: 0 auto;
   background-color: ${(props) => props.theme.carouselColor};
   border: 1px solid ${(props) => props.theme.text};
+  
   padding: 1rem;
-
+  
   border-radius: 20px;
   cursor: pointer;
 
@@ -100,8 +102,9 @@ const Name = styled.h2`
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  color: ${(props) => props.theme.text};
+  color: white
   margin-top: 1rem;
+  padding-top : 10px;
 `;
 
 const Position = styled.h2`
@@ -110,7 +113,7 @@ const Position = styled.h2`
   align-items: center;
   justify-content: center;
   text-transform: capitalize;
-  color: ${(props) => `rgba(${props.theme.textRgba}, 0.9)`};
+  color: ${(props) => `rgba(white, 0.9)`};
   font-weight: 400;
 `;
 
@@ -128,27 +131,27 @@ const MemberComponent = ({ img, name = " ", position = " " }) => {
 
 const Team = () => {
   return (
-    <Section id="team">
+    <Section id="team" style={roadmap_style}>
       <ConfettiComponent />
       <Title>Team</Title>
       <Container>
-        <MemberComponent img={img1} name="SKYBLAZE" position="founder" />
-        <MemberComponent img={img2} name="MEGNUM" position="Co-Founder" />
-        <MemberComponent img={img3} name="MONKEY KING" position="Director" />
-        <MemberComponent img={img4} name="BLACK PANTHER" position="Manager" />
-        <MemberComponent img={img5} name="DEATHSTROKE" position="Artist" />
+        
+        
+        
+        
+       
         <MemberComponent
           img={img6}
-          name="LAZY KONG"
-          position="Social Media Manager"
+          name="ROSHAN"
+          position="Founder & FullStack Dev"
         />
         <MemberComponent
           img={img7}
-          name="CYBER PUNK"
-          position="Blockchain Specialist"
+          name="Yogesh"
+          position="Founder & FullStack Dev"
         />
-        <MemberComponent img={img8} name="MONK" position="Web3 Developer" />
-        <MemberComponent img={img9} name="BANANA" position="Graphic Designer" />
+        <MemberComponent img={img8} name="Abhijeet" position="Founder & Software Dev" />
+        <MemberComponent img={img5} name="Adity Dalvi" position="Founder & Analyst" /> 
       </Container>
     </Section>
   );

@@ -9,7 +9,7 @@ import img3 from "../assets/Nfts/bighead-2.svg";
 import img4 from "../assets/Nfts/bighead-3.svg";
 import img5 from "../assets/Nfts/bighead-4.svg";
 import img6 from "../assets/Nfts/bighead-5.svg";
-
+// import { roadmap_style } from "../styles/styles";
 const Section = styled.section`
   width: 100vw;
   height: 25rem;
@@ -17,7 +17,7 @@ const Section = styled.section`
   border-top: 2px solid ${(props) => props.theme.text};
   border-top: 2px solid ${(props) => props.theme.text};
 
-  background-color: ${(props) => `rgba(${props.theme.textRgba}, 0.9)`};
+  background-color: black;
 
   display: flex;
   justify-content: center;
@@ -136,7 +136,7 @@ const JoinNow = styled.button`
 
 const Banner = () => {
   return (
-    <Section>
+    <Section >
       <ImgContainer>
         <img src={img1} alt="The Weirdos" />
         <img src={img2} alt="The Weirdos" />
@@ -146,7 +146,7 @@ const Banner = () => {
         <img src={img6} alt="The Weirdos" />
       </ImgContainer>
       <Title>
-        Join the <br /> weirdos club
+        Join the <br /> WalkUp Club
       </Title>
       <BtnContainer>
         <JoinNow>join now</JoinNow>
