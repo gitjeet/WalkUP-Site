@@ -102,7 +102,9 @@ const TypeWriterText = () => {
       </Title>
       <SubTitle>Bored Of NFTs? Get Creative with 3D and Geo NFTs</SubTitle>
       <ButtonContainer>
-        <Button text="Explore" link="#about" />
+        <a href="https://drive.google.com/file/d/1HpqppcYhUHS2m4eUl2Xfazk0Qgei3NNQ/view" target="_blank" rel="noopener noreferrer">
+          <Button text="Download" />
+        </a>
       </ButtonContainer>
     </>
   );
