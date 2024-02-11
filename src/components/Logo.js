@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { style } from "../styles/styles";
+import LOGO from "../assets/logo.png";
 
 const LogoText = styled.h1`
   font-family: "Akaya Telivigala", cursive;
@@ -21,7 +21,11 @@ const LogoText = styled.h1`
 const Logo = () => {
   return (
     <LogoText>
-      <Link to="/">W.</Link>
+      {/* <Link to="/">W.</Link>0 */}
+      {/* <Link to="/">
+        <img src="src\assets\logo.png" alt="Logo">
+      </Link> */}
+      <img src={LOGO} alt="Logo"></img>
     </LogoText>
   );
 };
