@@ -111,3 +111,17 @@ const TypeWriterText = () => {
 };
 
 export default TypeWriterText;
+
+
+{/* <LogoText>
+  <Link to="/">
+    <img src="path/to/your/local/folder/logo.jpg" alt="Logo">
+  </Link>
+</LogoText> */}
+
+
+{/* <VideoContainer>
+      <video src={GIF} type="video/mp4" autoPlay muted loop />
+       </VideoContainer> */}
+
+    // import GIF from "../assets/Home Video.mp4";
