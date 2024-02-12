@@ -148,14 +148,14 @@ const Footer = () => {
               <Instagram />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://twitter.com/Mapx25"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Twitter />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/mapx25"
               target="_blank"
               rel="noopener noreferrer"
             >
