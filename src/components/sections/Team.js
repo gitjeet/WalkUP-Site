@@ -10,6 +10,10 @@ import img6 from "../../assets/Nfts/bighead-5.svg";
 import img7 from "../../assets/Nfts/bighead-6.svg";
 import img8 from "../../assets/Nfts/bighead-7.svg";
 import img9 from "../../assets/Nfts/bighead-8.svg";
+import abhijeet from '../../assets/Nfts/Team/abhijeet.png'
+import roshan from '../../assets/Nfts/Team/roshan.png'
+import yogesh from '../../assets/Nfts/Team/yogesh.png'
+import dalvi from '../../assets/Nfts/Team/dalvi.jpg'
 import ConfettiComponent from "../Confetti";
 import {roadmap_style} from "../../styles/styles"
 const Section = styled.section`
@@ -141,17 +145,17 @@ const Team = () => {
         
        
         <MemberComponent
-          img={img6}
-          name="ROSHAN"
+          img={roshan}
+          name="Roshan"
           position="Founder & FullStack Dev"
         />
         <MemberComponent
-          img={img7}
+          img={yogesh}
           name="Yogesh"
           position="Founder & FullStack Dev"
         />
-        <MemberComponent img={img8} name="Abhijeet" position="Founder & Software Dev" />
-        <MemberComponent img={img5} name="Adity Dalvi" position="Founder & Analyst" /> 
+        <MemberComponent img={abhijeet} name="Abhijeet" position="Founder & Software Dev" />
+        <MemberComponent img={dalvi} name="Adity Dalvi" position="Founder & Analyst" /> 
       </Container>
     </Section>
   );

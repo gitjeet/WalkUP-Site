@@ -2,16 +2,11 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 
-import img1 from "../../assets/Nfts/bighead.svg";
-import img2 from "../../assets/Nfts/bighead-1.svg";
-import img3 from "../../assets/Nfts/bighead-2.svg";
-import img4 from "../../assets/Nfts/bighead-3.svg";
-import img5 from "../../assets/Nfts/bighead-4.svg";
-import img6 from "../../assets/Nfts/bighead-5.svg";
-import img7 from "../../assets/Nfts/bighead-6.svg";
-import img8 from "../../assets/Nfts/bighead-7.svg";
-import img9 from "../../assets/Nfts/bighead-8.svg";
-import img10 from "../../assets/Nfts/bighead-9.svg";
+
+import B1 from "../../assets/Showcase-images/apple.svg"
+import B2 from "../../assets/Showcase-images/B2.svg"
+import B3 from "../../assets/Showcase-images/B3.svg"
+import AC1 from "../../assets/Showcase-images/AC1.svg"
 import ETH from "../../assets/icons8-ethereum-48.png";
 import {linear_gradient3} from "../../styles/styles"
 const Section = styled.section`
@@ -152,18 +147,18 @@ const Showcase = () => {
   return (
     <Section id="showcase" style={linear_gradient3}>
       <Row direction="none" ref={Row1Ref}>
-        <NftItem img={img1} number={852} price={1.0} passRef={Row1Ref} />
-        <NftItem img={img2} number={123} price={1.2} passRef={Row1Ref} />
-        <NftItem img={img3} number={456} price={2.5} passRef={Row1Ref} />
-        <NftItem img={img4} number={661} price={3.5} passRef={Row1Ref} />
-        <NftItem img={img5} number={452} price={4.7} passRef={Row1Ref} />
+        <NftItem img={B1} number={852} price={1.0} passRef={Row1Ref} />
+        <NftItem img={B2} number={123} price={1.2} passRef={Row1Ref} />
+        <NftItem img={B3} number={456} price={2.5} passRef={Row1Ref} />
+        <NftItem img={AC1} number={661} price={3.5} passRef={Row1Ref} />
+        <NftItem img={AC2} number={452} price={4.7} passRef={Row1Ref} />
       </Row>
       <Row direction="reverse" ref={Row2Ref}>
-        <NftItem img={img6} number={888} price={1.2} passRef={Row2Ref} />
-        <NftItem img={img7} number={211} price={3.2} passRef={Row2Ref} />
-        <NftItem img={img8} number={455} price={1.8} passRef={Row2Ref} />
-        <NftItem img={img9} number={456} price={5.1} passRef={Row2Ref} />
-        <NftItem img={img10} number={865} price={3.7} passRef={Row2Ref} />
+        <NftItem img={AC3} number={888} price={1.2} passRef={Row2Ref} />
+        <NftItem img={CP1} number={211} price={3.2} passRef={Row2Ref} />
+        <NftItem img={CP2} number={455} price={1.8} passRef={Row2Ref} />
+        <NftItem img={CP3} number={456} price={5.1} passRef={Row2Ref} />
+        <NftItem img={B1} number={865} price={3.7} passRef={Row2Ref} />
       </Row>
     </Section>
   );
