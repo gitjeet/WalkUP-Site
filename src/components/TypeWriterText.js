@@ -61,19 +61,6 @@ const SubTitle = styled.h3`
   }
 `;
 
-// const ButtonContainer = styled.div`
-//   width: 80%;
-//   align-self: flex-start;
-
-//   @media (max-width: 48em) {
-//     align-self: center;
-//     text-align: center;
-
-//     button {
-//       margin: 0 auto;
-//     }
-//   }
-// `;
 
 const ButtonContainer = styled.div`
   width: 80%;
@@ -136,16 +123,3 @@ const TypeWriterText = () => {
 
 export default TypeWriterText;
 
-
-{/* <LogoText>
-  <Link to="/">
-    <img src="path/to/your/local/folder/logo.jpg" alt="Logo">
-  </Link>
-</LogoText> */}
-
-
-{/* <VideoContainer>
-      <video src={GIF} type="video/mp4" autoPlay muted loop />
-       </VideoContainer> */}
-
-    // import GIF from "../assets/Home Video.mp4";
