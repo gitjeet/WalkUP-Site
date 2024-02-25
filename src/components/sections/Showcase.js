@@ -2,18 +2,17 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 
-
-import B1 from "../../assets/Showcase-images/apple.svg"
-import B2 from "../../assets/Showcase-images/B2.svg"
-import B3 from "../../assets/Showcase-images/B3.svg"
-import AC1 from "../../assets/Showcase-images/AC1.svg"
-import AC2 from "../../assets/Showcase-images/AC2.svg"
-import AC3 from "../../assets/Showcase-images/AC3.svg"
-import CP1 from "../../assets/Showcase-images/CP1.svg"
-import CP2 from "../../assets/Showcase-images/CP2.svg"
-import CP3 from "../../assets/Showcase-images/CP3.svg"
+import B1 from "../../assets/Showcase-images/apple.svg";
+import B2 from "../../assets/Showcase-images/B2.svg";
+import B3 from "../../assets/Showcase-images/B3.svg";
+import AC1 from "../../assets/Showcase-images/AC1.svg";
+import AC2 from "../../assets/Showcase-images/AC2.svg";
+import AC3 from "../../assets/Showcase-images/AC3.svg";
+import CP1 from "../../assets/Showcase-images/CP1.svg";
+import CP2 from "../../assets/Showcase-images/CP2.svg";
+import CP3 from "../../assets/Showcase-images/CP3.svg";
 import ETH from "../../assets/icons8-ethereum-48.png";
-import {linear_gradient3} from "../../styles/styles"
+import { linear_gradient3 } from "../../styles/styles";
 const Section = styled.section`
   min-height: 100vh;
   width: 100vw;
@@ -116,29 +115,20 @@ const Price = styled.div`
   }
 `;
 
-const NftItem = ({ img, number = 0, price = 0, passRef }) => {
+const NftItem = ({ img, number = 0, price = 0, passRef, name }) => {
   let play = (e) => {
     passRef.current.style.animationPlayState = "running";
   };
   let pause = (e) => {
     passRef.current.style.animationPlayState = "paused";
   };
-
   return (
     <ImgContainer onMouseOver={(e) => pause(e)} onMouseOut={(e) => play(e)}>
       <img src={img} alt="The Weirdos" />
       <Details>
         <div>
-          <span>Weirdos</span> <br />
+          <span>{name}</span> <br />
           <h1>#{number}</h1>
-        </div>
-
-        <div>
-          <span>Price</span>
-          <Price>
-            <img src={ETH} alt="ETH" />
-            <h1>{Number(price).toFixed(1)}</h1>
-          </Price>
         </div>
       </Details>
     </ImgContainer>
@@ -152,18 +142,24 @@ const Showcase = () => {
   return (
     <Section id="showcase" style={linear_gradient3}>
       <Row direction="none" ref={Row1Ref}>
-        <NftItem img={B1} number={852} price={1.0} passRef={Row1Ref} />
-        <NftItem img={B2} number={123} price={1.2} passRef={Row1Ref} />
-        <NftItem img={B3} number={456} price={2.5} passRef={Row1Ref} />
-        <NftItem img={AC1} number={661} price={3.5} passRef={Row1Ref} />
-        <NftItem img={AC2} number={452} price={4.7} passRef={Row1Ref} />
+        <NftItem
+          img={B1}
+          number={852}
+          price={1.0}
+          passRef={Row1Ref}
+          name={"Business"}
+        />
+        <NftItem img={B2} number={123} price={1.2} passRef={Row1Ref} name={"Business"}/>
+        <NftItem img={B3} number={456} price={2.5} passRef={Row1Ref} name={"Business"} />
+        <NftItem img={AC1} number={661} price={3.5} passRef={Row1Ref} name={"Artist & Creators"} />
+        <NftItem img={AC2} number={452} price={4.7} passRef={Row1Ref} name={"Artist & Creators"}/>
       </Row>
       <Row direction="reverse" ref={Row2Ref}>
-        <NftItem img={AC3} number={888} price={1.2} passRef={Row2Ref} />
-        <NftItem img={CP1} number={211} price={3.2} passRef={Row2Ref} />
-        <NftItem img={CP2} number={455} price={1.8} passRef={Row2Ref} />
-        <NftItem img={CP3} number={456} price={5.1} passRef={Row2Ref} />
-        <NftItem img={ETH} number={865} price={3.7} passRef={Row2Ref} />
+        <NftItem img={AC3} number={888} price={1.2} passRef={Row2Ref} name={"Artist & Creators"} />
+        <NftItem img={CP1} number={211} price={3.2} passRef={Row2Ref} name={"Crypto Projects"}/>
+        <NftItem img={CP2} number={455} price={1.8} passRef={Row2Ref} name={"Crypto Projects"}/>
+        <NftItem img={CP3} number={456} price={5.1} passRef={Row2Ref} name={"Crypto Projects"}/>
+        <NftItem img={ETH} number={865} price={3.7} passRef={Row2Ref} name={"Crypto Projects"}/>
       </Row>
     </Section>
   );

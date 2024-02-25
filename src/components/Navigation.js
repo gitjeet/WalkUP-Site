@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import Logo from "./Logo";
-import { style }  from "../styles/styles";
+import { style } from "../styles/styles";
 const Section = styled.section`
   width: 100vw;
-  
 `;
 
 const NavBar = styled.nav`
@@ -153,7 +152,7 @@ const Navigation = () => {
   return (
     <Section id="navigation">
       <NavBar>
-        <Logo  />
+        <Logo />
         <HamburguerMenu click={click} onClick={() => setClick(!click)}>
           &nbsp;
         </HamburguerMenu>
@@ -164,6 +163,15 @@ const Navigation = () => {
           <MenuItem onClick={() => scrollTo("showcase")}>Showcase</MenuItem>
           <MenuItem onClick={() => scrollTo("team")}>Team</MenuItem>
           <MenuItem onClick={() => scrollTo("faq")}>Faq</MenuItem>
+          <MenuItem>
+            <a
+              href="https://drive.google.com/file/d/1-E9HPQNfuOpgmfGI1Fnu6XSebQV2MipP/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Whitepaper
+            </a>
+          </MenuItem>
           <MenuItem>
             <div className="mobile">
               <Button text="Connect Wallet" link="https://www.google.com.br/" />
