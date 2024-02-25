@@ -7,6 +7,11 @@ import B1 from "../../assets/Showcase-images/apple.svg"
 import B2 from "../../assets/Showcase-images/B2.svg"
 import B3 from "../../assets/Showcase-images/B3.svg"
 import AC1 from "../../assets/Showcase-images/AC1.svg"
+import AC2 from "../../assets/Showcase-images/AC2.svg"
+import AC3 from "../../assets/Showcase-images/AC3.svg"
+import CP1 from "../../assets/Showcase-images/CP1.svg"
+import CP2 from "../../assets/Showcase-images/CP2.svg"
+import CP3 from "../../assets/Showcase-images/CP3.svg"
 import ETH from "../../assets/icons8-ethereum-48.png";
 import {linear_gradient3} from "../../styles/styles"
 const Section = styled.section`
@@ -158,7 +163,7 @@ const Showcase = () => {
         <NftItem img={CP1} number={211} price={3.2} passRef={Row2Ref} />
         <NftItem img={CP2} number={455} price={1.8} passRef={Row2Ref} />
         <NftItem img={CP3} number={456} price={5.1} passRef={Row2Ref} />
-        <NftItem img={B1} number={865} price={3.7} passRef={Row2Ref} />
+        <NftItem img={ETH} number={865} price={3.7} passRef={Row2Ref} />
       </Row>
     </Section>
   );
