@@ -61,9 +61,29 @@ const SubTitle = styled.h3`
   }
 `;
 
+// const ButtonContainer = styled.div`
+//   width: 80%;
+//   align-self: flex-start;
+
+//   @media (max-width: 48em) {
+//     align-self: center;
+//     text-align: center;
+
+//     button {
+//       margin: 0 auto;
+//     }
+//   }
+// `;
+
 const ButtonContainer = styled.div`
   width: 80%;
   align-self: flex-start;
+  display: flex; /* Added to make the buttons align horizontally */
+
+  /* Added styles to space out the buttons */
+  button {
+    margin-right: 70px; /* Adjust this value to increase or decrease the space between buttons */
+  }
 
   @media (max-width: 48em) {
     align-self: center;
@@ -74,6 +94,7 @@ const ButtonContainer = styled.div`
     }
   }
 `;
+
 
 const TypeWriterText = () => {
   return (
@@ -104,6 +125,9 @@ const TypeWriterText = () => {
       <ButtonContainer>
         <a href="https://drive.google.com/file/d/1HpqppcYhUHS2m4eUl2Xfazk0Qgei3NNQ/view" target="_blank" rel="noopener noreferrer">
           <Button text="Download" />
+        </a>
+        <a href="https://forms.gle/XPbe9APEUbbn9iDS6" target="_blank" rel="noopener noreferrer">
+          <Button text="Business" />
         </a>
       </ButtonContainer>
     </>
