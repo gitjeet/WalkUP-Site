@@ -12,8 +12,9 @@ import { Pagination, Navigation, Autoplay, EffectCards } from "swiper";
 
 import img1 from "../assets/Nfts/img1.png";
 import img2 from "../assets/Nfts/img2.png";
-import img3 from "../assets/Nfts/img3.jpg";
- import img4 from "../assets/Nfts/img4.jpg";
+import img3 from "../assets/Nfts/img3.png";
+import img4 from "../assets/Nfts/img4.png";
+import img5 from "../assets/Nfts/img5.png";
 // import img5 from "../assets/Nfts/bighead-4.svg";
 // import img6 from "../assets/Nfts/bighead-5.svg";
 // import img7 from "../assets/Nfts/bighead-6.svg";
@@ -134,11 +135,11 @@ const Carousel = () => {
         <SwiperSlide>
           <img src={img4} alt="The Weirdos" />
         </SwiperSlide>
-
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <img src={img5} alt="The Weirdos" />
         </SwiperSlide>
-        <SwiperSlide>
+
+        {/* <SwiperSlide>
           <img src={img6} alt="The Weirdos" />
         </SwiperSlide>
         <SwiperSlide>

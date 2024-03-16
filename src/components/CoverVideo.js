@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 // import GIF from "../assets/Home Video.mp4";
-import Home_Video from "../assets/Home Video.gif";
+import Home_Video from "../assets/Timelinenewthree.gif";
 import Arrow from "../assets/Arrow.svg";
 import {style} from "../styles/styles";
 import { SwiperSlide } from "swiper/react";
@@ -62,6 +62,13 @@ const Container = styled.div`
       object-fit: cover;
     }
   }
+
+  .video {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+  }
+
 
   .swiper-button-next {
     color: ${(props) => props.theme.text};
