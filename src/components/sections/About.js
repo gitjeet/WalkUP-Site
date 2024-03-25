@@ -150,18 +150,13 @@ const About = () => {
         </Box>
         <Box>
           <Title>
-            Welcome To The <br /> WalkUp Club.
+            Welcome To The <br /> CryptoRunner.
           </Title>
           <SubText>
-            The WalkUp Club is a private collection of NFTs—unique digital
-            collectibles. The Weirdos are stored as ERC-721 tokens on the
-            Ethereum blockchain and hosted on IPFS.
+          The next generation of web building blocks are here — foster relationships between you and your customer.Tokenise your business offerings into a format that is hard to resist for your target group.
           </SubText>
           <SubTextLight>
-            With more than 200+ hand drawn traits, each NFT is unique and comes
-            with a membership to an exclusive group of successful investors.
-            Join an ambitious ever-growing community with multiple benefits and
-            utilities.
+          Pokemon Go has proven that it can flock people into places to "catch them all". Team WalkupLabs is aiming to offer businesses the exact same effect. Build communities by gathering people together.
           </SubTextLight>
           <ButtonContainer>
             <ThemeProvider theme={dark}>

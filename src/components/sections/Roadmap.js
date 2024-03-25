@@ -162,14 +162,17 @@ const Text = styled.span`
     font-size: ${(props) => props.theme.fontxs};
   }
 `;
-
 const RoadMapItem = ({ title, subtext, addToRef }) => {
+  const subtextLines = subtext.split('\n');
+
   return (
     <Item ref={addToRef}>
       <ItemContainer>
         <Box>
           <SubTitle>{title}</SubTitle>
-          <Text>{subtext}</Text>
+          {subtextLines.map((line, index) => (
+            <Text key={index}>{line}</Text>
+          ))}
         </Box>
       </ItemContainer>
     </Item>
@@ -224,13 +227,18 @@ const Roadmap = () => {
         <Items>
           <Item>&nbsp;</Item>
           <RoadMapItem
-            addToRef={addToRefs}
-            title="Grand Opening"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
-          />
+    addToRef={addToRefs}
+    title="Summer Q1-2024"
+    subtext={`
+        Move2Earn game logic ✅\n
+        Integrated map-based gameplay ✅\n
+        Geo-tagging and 3D NFT elements ✅\n
+        Released the alpha version on the Play Store ⌛.
+    `}
+/>
           <RoadMapItem
             addToRef={addToRefs}
-            title="Great Benefits"
+            title="Spring Q2-2024"
             subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
           />
           <RoadMapItem

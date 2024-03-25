@@ -87,7 +87,7 @@ const TypeWriterText = () => {
   return (
     <>
       <Title>
-        Step Into NFT Adventure
+      A next-gen geo-tagged playground where players meet opportunities offered with a timeless technology.
         <Typewriter
           options={{
             autoStart: true,
@@ -95,13 +95,13 @@ const TypeWriterText = () => {
           }}
           onInit={(typewriter) => {
             typewriter
-              .typeString("<span class='text-1'>Explore</span>")
+            .typeString("<span class='text-1'>Map Based Gameplay</span>")
               .pauseFor(2000)
               .deleteAll()
-              .typeString("<span class='text-2'>Earn</span>")
+              .typeString("<span class='text-2'>REWARDS USERS FOR MOVEMENT</span>")
               .pauseFor(2000)
               .deleteAll()
-              .typeString("<span class='text-3'>Boost Local Business!</span>")
+              .typeString("<span class='text-3'>Provide market visibility to communities and businesses.</span>")
               .pauseFor(2000)
               .deleteAll()
               .start();
@@ -110,7 +110,7 @@ const TypeWriterText = () => {
       </Title>
       <SubTitle>Bored Of NFTs? Get Creative with 3D and Geo NFTs</SubTitle>
       <ButtonContainer>
-        <a href="https://drive.google.com/file/d/1HpqppcYhUHS2m4eUl2Xfazk0Qgei3NNQ/view" target="_blank" rel="noopener noreferrer">
+        <a href="https://drive.google.com/file/d/10IB1WL2KcvLi1MQmlxjPwgGcDtmhRzph/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           <Button text="Download" />
         </a>
         <a href="https://forms.gle/XPbe9APEUbbn9iDS6" target="_blank" rel="noopener noreferrer">
